@@ -15,5 +15,5 @@ To build the app:
 flutter build apk --release
 
 ## License
-© 2026 Helmut Bayerle. All rights reserved.  
+© 2026 WV WEltall Verlag e. K.. All rights reserved.  
 Source code and content may not be copied, modified, or redistributed.
