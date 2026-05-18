@@ -1,7 +1,7 @@
 # 📘 I Ching – Chinese Wisdom
 Digitale Edition des **WV Weltall Verlag e.K.**
 
-Eine minimalistische Flutter‑Anwendung, inspiriert vom *I Ging* (Buch der Wandlungen).
+Eine minimalistische Flutter‑Anwendung, inspiriert vom *A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“*.
 
 ---
 
