@@ -103,7 +103,7 @@
 <body>
 
 <header>
-  <img src="icon.png" alt="App Icon">
+  <img src="app_icon.png" alt="App Icon">
   <h1>I Ching · Chinese Wisdom</h1>
   <div class="subtitle">
     Eine moderne, ruhige Interpretation des klassischen I‑Ging — werbefrei, offline und respektvoll gegenüber der Tradition.
@@ -154,10 +154,36 @@
   </div>
 </section>
 
-<section class="download">
-  <a href="app-release.apk">Download App</a>
-  <p>Letzte Version · 12 MB · Android</p>
-</section>
+   <!-- ⭐ Zweispaltiger Download-Bereich -->
+   <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;">
+        <div class="box" style="flex:1; min-width:280px;">
+            <h2>🤖 Android‑Version</h2>
+            <p>Version: 1.0.0 (Release Build)</p>
+            <a class="button" href="https://github.com/weltall-verlag/i-ching/releases/download/v1.0.0/app-release.apk">
+                APK herunterladen
+            </a>
+        </div>
+        
+        <div class="box" style="flex:1; min-width:280px;">
+            <h2>🖥️ Windows‑Version</h2>
+            <p>Version: 1.0.0 (Release Build)</p>
+            <a class="button" href="https://github.com/weltall-verlag/i-ching/releases/download/v1.0.0/i-ching-windows.zip">
+                ZIP herunterladen
+            </a>
+        </div>
+        
+    <div class="box" style="flex:1; min-width:280px;">
+        <h2>🍎 iOS – geplant</h2>
+        <p>Noch nicht verfügbar</p>
+    </div>
+</div>
+    <!-- Download Counter direkt unter der iOS-Box -->
+    <div style="margin-top:20px; font-size:14px; color:#555;">
+        <p>🤖 APK Downloads: <span id="apkDownloads">…</span></p>
+        <p>💻 Windows ZIP Downloads: <span id="zipDownloads">…</span></p>
+    </div>
+    
+
 
 <footer>
   © 2026 Weltall Verlag · Digitale Edition nach A. V. Krutikov  
