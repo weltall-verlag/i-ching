@@ -163,6 +163,16 @@
   margin-right: 10px;
   vertical-align: middle;
 }   
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
   </style>
 </head>
 
@@ -237,14 +247,14 @@
       <h3>🤖 Android-Version</h3>
       <p>Version: 1.0.0 (Release Build)</p>
        <a href="https://github.com/weltall-verlag/i-ching/releases/latest/download/app-release.apk">APK herunterladen</a>
-      <p>Downloads: <span id="apkDownloads">…</span></p>
+      <span id="apkDownloads" class="fade-in">...</span>
     </div>
 
     <div class="download-box">
       <h3>💻 Windows-Version</h3>
       <p>Version: 1.0.0 (Release Build)</p>
       <a href="https://github.com/weltall-verlag/i-ching/releases/latest/download/i-ching-windows.zip">ZIP herunterladen</a>
-      <p>Downloads: <span id="zipDownloads">…</span></p>
+      <span id="zipDownloads" class="fade-in">...</span>
     </div>
 
     <div class="download-box">
@@ -259,27 +269,40 @@ async function loadDownloadCounts() {
     const apiUrl = "https://api.github.com/repos/weltall-verlag/i-ching/releases/latest";
 
     try {
-      const response = await fetch(apiUrl, {
-        headers: { "User-Agent": "weltall-verlag/i-ching" }
-      });
-       
+        const response = await fetch(apiUrl, {
+            headers: { "User-Agent": "weltall-verlag/i-ching" }
+        });
+        if (!response.ok) throw new Error("GitHub API error: " + response.status);
+
         const data = await response.json();
 
         let apkCount = 0;
         let zipCount = 0;
 
         data.assets.forEach(asset => {
-            if (asset.name.endsWith(".apk")) apkCount = asset.download_count;
-            if (asset.name.endsWith(".zip")) zipCount = asset.download_count;
+            if (asset.name.toLowerCase().endsWith(".apk")) {
+                apkCount = asset.download_count;
+            }
+            if (asset.name.toLowerCase().endsWith(".zip")) {
+                zipCount = asset.download_count;
+            }
         });
 
-        document.getElementById("apkDownloads").textContent = apkCount;
-        document.getElementById("zipDownloads").textContent = zipCount;
+        const apkEl = document.getElementById("apkDownloads");
+        const zipEl = document.getElementById("zipDownloads");
+
+        apkEl.textContent = apkCount;
+        zipEl.textContent = zipCount;
+
+        // Fade‑in aktivieren
+        apkEl.classList.add("visible");
+        zipEl.classList.add("visible");
 
     } catch (error) {
         console.error("Error loading download counts:", error);
     }
 }
+
 // Sicherstellen, dass das DOM geladen ist, bevor das Skript läuft
 document.addEventListener("DOMContentLoaded", loadDownloadCounts);
 </script>
