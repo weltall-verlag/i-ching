@@ -20,7 +20,7 @@
 
     h1, h2, h3 {
       font-family: "Playfair Display", serif;
-      color: #0a5a4a;
+      color: #2a7d7b; /* Verlags-Farbton */
       letter-spacing: 0.3px;
     }
 
@@ -139,11 +139,18 @@
     }
 
     .download-box a {
-      color: #0066cc;
+      color: #2a7d7b; /*color: #0066cc;*/
       text-decoration: none;
       font-weight: 500;
     }
-
+    
+  .download-box a:hover {
+  color: #1f5f5d;
+  }
+    .download-box p span {
+  font-weight: 600;
+  color: #2a7d7b;
+}
     footer {
       text-align: center;
       padding: 40px 0;
@@ -229,12 +236,14 @@
       <h3>🤖 Android-Version</h3>
       <p>Version: 1.0.0 (Release Build)</p>
       <a href="app-release.apk">APK herunterladen</a>
+      <p>Downloads: <span id="apk-count">…</span></p>
     </div>
 
     <div class="download-box">
       <h3>💻 Windows-Version</h3>
       <p>Version: 1.0.0 (Release Build)</p>
       <a href="app-release.zip">ZIP herunterladen</a>
+      <p>Downloads: <span id="zip-count">…</span></p>
     </div>
 
     <div class="download-box">
@@ -243,6 +252,33 @@
     </div>
   </div>
 </section>
+  
+<script>
+async function loadDownloadCounts() {
+    const apiUrl = "https://api.github.com/repos/weltall-verlag/i-ching/releases/latest";
+
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        let apkCount = 0;
+        let zipCount = 0;
+
+        data.assets.forEach(asset => {
+            if (asset.name.endsWith(".apk")) apkCount = asset.download_count;
+            if (asset.name.endsWith(".zip")) zipCount = asset.download_count;
+        });
+
+        document.getElementById("apkDownloads").textContent = apkCount;
+        document.getElementById("zipDownloads").textContent = zipCount;
+
+    } catch (error) {
+        console.error("Error loading download counts:", error);
+    }
+}
+// Sicherstellen, dass das DOM geladen ist, bevor das Skript läuft
+document.addEventListener("DOMContentLoaded", loadDownloadCounts);
+</script>
 
 <footer>
   © 2026 Weltall Verlag · Digitale Edition nach A. V. Krutikov  
