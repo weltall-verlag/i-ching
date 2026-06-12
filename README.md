@@ -17,10 +17,13 @@ Eine minimalistische Flutter‑Anwendung, inspiriert vom *A. V. Krutikov –
 ---
 
 ## 🏛 Herkunft der Texte
-Ausgewählte Inhalte aus:  
-**A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“**  
-ISBN 978‑3‑939693‑00‑0  
 
+Die Deutungen der Hexagramme basieren auf den Materialien des Buches von
+A. V. Krutikov „I-Ging. Das Spiel der chinesischen Weisen“ (ISBN 978-3-939693-00-0) und wurden für diese App übersetzt sowie behutsam angepasst.
+
+Die Übersetzungen orientieren sich eng am russischen Original und bewahren den klassischen, würdevollen Stil des I-Ging.
+
+© А.В. Крутиков
 © WV Weltall Verlag e.K., Bad Nauheim  
 Autor (offizielle Website): https://synharmony.net
 
