@@ -1,8 +1,13 @@
+# 🌿 И‑Цзин — современная интерпретация классического «И Цзин»
+Приложение по книге А. В. Крутикова «И‑Цзин. Игра китайских мудрецов».  
+Толкование 64 гексаграмм. Полностью офлайн. Без рекламы.
+
 # 📘 I Ching – Chinese Wisdom
 Digitale Edition des **WV Weltall Verlag e.K.**
 
 Eine minimalistische Flutter‑Anwendung, inspiriert von  
-*A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“*.
+*A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weise
+n“*.
 
 - Vollständige Darstellung der 64 Hexagramme  
 - Ruhige, minimalistische Typografie  
@@ -15,6 +20,7 @@ Eine minimalistische Flutter‑Anwendung, inspiriert von
 ---
 
 ## 🌿 Современная интерпретация классического «И Цзин»
+
 Приложение без рекламы, полностью офлайн, доступно на трёх языках (RU/DE/EN).
 
 - 64 гексаграммы  
