@@ -1,13 +1,11 @@
 # 📘 I Ching – Chinese Wisdom
 Digitale Edition des **WV Weltall Verlag e.K.**
 
-Eine minimalistische Flutter‑Anwendung, inspiriert vom *A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“*.
+Eine minimalistische Flutter‑Anwendung, inspiriert von  
+*A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“*.
 
----
-
-## 🧭 Inhalt & Funktionsumfang
 - Vollständige Darstellung der 64 Hexagramme  
-- Klar strukturierte Texte in ruhiger, minimalistischer Typografie  
+- Ruhige, minimalistische Typografie  
 - Zufalls‑ und Linienwurf‑Funktion  
 - Verlauf & Favoriten  
 - Dreisprachige Ausgabe (DE / EN / RU)  
@@ -16,12 +14,25 @@ Eine minimalistische Flutter‑Anwendung, inspiriert vom *A. V. Krutikov –
 
 ---
 
-## 🏛 Herkunft der Texte
+## 🌿 Современная интерпретация классического «И Цзин»
+Приложение без рекламы, полностью офлайн, доступно на трёх языках (RU/DE/EN).
 
-Die Deutungen der Hexagramme basieren auf den Materialien des Buches von
-A. V. Krutikov „I-Ging. Das Spiel der chinesischen Weisen“ (ISBN 978-3-939693-00-0) und wurden für diese App übersetzt sowie behutsam angepasst.
+- 64 гексаграммы  
+- минималистичный дизайн  
+- локальные данные (без интернета)  
+- история и избранное  
+- функция случайного броска монет  
 
-Die Übersetzungen orientieren sich eng am russischen Original und bewahren den klassischen, würdevollen Stil des I-Ging.
+---
+
+## 🏛 Источник текста / Herkunft der Texte
+
+Толкования в русской версии приложения полностью соответствуют книге А. В. Крутикова «И Цзин. Игра китайских мудрецов» (ISBN 978‑3‑939693‑00‑0). Переводы на другие языки выполнены на основе русского оригинала и бережно адаптированы.
+Приложение полностью офлайн, без рекламы и доступно на трёх языках (EN/DE/RU)
+
+🌿🌿🌿
+Die Deutungen der Hexagramme basieren auf den Materialien des Buches von A. V. Krutikov „I‑Ging. Das Spiel der chinesischen Weisen“ (ISBN 978‑3‑939693‑00‑0). Die Texte wurden für diese App übersetzt, behutsam angepasst und orientieren sich eng am russischen Original, wobei der klassische, würdige Stil des I‑Ging gewahrt bleibt.
+Vollständig offline, werbefrei und dreisprachig (EN/DE/RU).
 
 © А.В. Крутиков
 © WV Weltall Verlag e.K., Bad Nauheim  
@@ -76,3 +87,7 @@ Eine Weiterverwendung, Vervielfältigung oder kommerzielle Nutzung ist ohne schr
 **WV Weltall Verlag e.K.**  
 Bad Nauheim, Deutschland  
 https://www.weltall-verlag.de
+
+🤝 Контакты
+Для вопросов и сотрудничества:
+kontakt@weltall-verlag.de
