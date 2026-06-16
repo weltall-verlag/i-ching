@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://weltall-verlag.github.io/i-ching/sitemap.xml
