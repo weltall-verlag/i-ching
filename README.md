@@ -2,8 +2,8 @@
 Приложение по книге А. В. Крутикова «И‑Цзин. Игра китайских мудрецов».  
 Толкование 64 гексаграмм. Полностью офлайн. Без рекламы.
 
-# 📘 I Ching – Chinese Wisdom
-Digitale Edition des **WV Weltall Verlag e.K.**
+# 📘 I Ching (易經) – Digitale Edition
+ **WV Weltall Verlag e.K.**
 
 Eine minimalistische Flutter‑Anwendung, inspiriert von  
 *A. V. Krutikov – „I‑Ging. Das Spiel der chinesischen Weisen“*.
