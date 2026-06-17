@@ -1,6 +1,28 @@
-# 🌿 И‑Цзин — современная интерпретация классического «И Цзин»
-Приложение по книге А. В. Крутикова «И‑Цзин. Игра китайских мудрецов».  
-Толкование 64 гексаграмм. Полностью офлайн. Без рекламы.
+# 📘 I Ching (易經) – Digital Edition  
+**Weltall Verlag e.K.**
+
+A minimalist Flutter application inspired by  
+*A. V. Krutikov – “I Ching. The Game of Chinese Sages”*.
+
+- Complete interpretation of all 64 hexagrams  
+- Calm, minimalist typography  
+- Random hexagram and line‑casting  
+- History & Favorites  
+- Trilingual edition (EN / DE / RU)  
+- Fully offline  
+- No ads, no tracking  
+
+##  🏛 Source of the Texts
+
+The interpretations in the Russian version follow the book  
+A. V. Krutikov, *“I Ching. The Game of Chinese Sages”* (ISBN 978‑3‑939693‑00‑0).  
+The English and German versions are careful translations and adaptations of the Russian original, preserving the classical tone of the I Ching.  
+The app works fully offline and contains no advertising.
+
+© A. V. Krutikov  
+© Weltall Verlag e.K., Bad Nauheim  
+Author (official website): https://synharmony.net
+
 
 # 📘 I Ching (易經) – Digitale Edition
  **WV Weltall Verlag e.K.**
@@ -18,18 +40,45 @@ Eine minimalistische Flutter‑Anwendung, inspiriert von
 
 ---
 
-## 🏛 Источник текста / Herkunft der Texte
+## 🏛 Herkunft der Texte
 
-Толкования в русской версии приложения полностью соответствуют книге А. В. Крутикова «И Цзин. Игра китайских мудрецов» (ISBN 978‑3‑939693‑00‑0). Переводы на другие языки выполнены на основе русского оригинала и бережно адаптированы.
-Приложение полностью офлайн, без рекламы и доступно на трёх языках (EN/DE/RU)
-
-🌿🌿🌿
-Die Deutungen der Hexagramme basieren auf den Materialien des Buches von A. V. Krutikov „I‑Ging. Das Spiel der chinesischen Weisen“ (ISBN 978‑3‑939693‑00‑0). Die Texte wurden für diese App übersetzt, behutsam angepasst und orientieren sich eng am russischen Original, wobei der klassische, würdige Stil des I‑Ging gewahrt bleibt.
+Die Deutungen der Hexagramme basieren auf den Materialien des Buches von  
+A. V. Krutikov „I‑Ging. Das Spiel der chinesischen Weisen“ (ISBN 978‑3‑939693‑00‑0).  
+Die Texte wurden für diese App übersetzt, behutsam angepasst und orientieren sich eng am russischen Original, wobei der klassische, würdige Stil des I‑Ging gewahrt bleibt.  
 Vollständig offline, werbefrei und dreisprachig (EN/DE/RU).
 
-© А.В. Крутиков
-© WV Weltall Verlag e.K., Bad Nauheim  
+© A. V. Krutikov  
+© Weltall Verlag e.K., Bad Nauheim  
 Autor (offizielle Website): https://synharmony.net
+
+---
+
+# 🌿 И‑Цзин — цифровое издание  
+**Weltall Verlag e.K.**
+
+Минималистичное Flutter‑приложение, основанное на книге  
+А. В. Крутикова «И‑Цзин. Игра китайских мудрецов».
+
+- Полное представление 64 гексаграмм  
+- Сдержанный, минималистичный шрифт  
+- Функции случайного выбора и выбора по линии  
+- История и избранное  
+- Трехъязычный интерфейс (DE / EN / RU)  
+- Полностью доступно в автономном режиме  
+- Без рекламы, без сбора данных  
+
+---
+
+## 🏛 Источник текста
+
+Толкования в русской версии приложения полностью соответствуют книге  
+А. В. Крутикова «И‑Цзин. Игра китайских мудрецов» (ISBN 978‑3‑939693‑00‑0).  
+Переводы на другие языки выполнены на основе русского оригинала и бережно адаптированы.  
+Приложение полностью офлайн, без рекламы и доступно на трёх языках (EN/DE/RU).
+
+© А. В. Крутиков  
+© Weltall Verlag e.K., Бад Наухайм  
+Официальный сайт автора: https://synharmony.net
 
 ---
 
