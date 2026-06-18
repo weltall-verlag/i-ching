@@ -77,6 +77,14 @@
       margin-bottom: 12px;
     }
 
+/* Linie unter dem Verlagstitel */
+.header-line {
+  width: 60%;                /* Kürzt die Linie auf 60 % der Seitenbreite */
+  margin: 0 auto 20px auto;  /* Zentriert sie und fügt unten etwas Abstand hinzu */
+  border-bottom: 1px solid #0a5a4a; /* Farbe passend zum Titel */
+  opacity: 0.8;              /* Etwas weicher, wirkt ruhiger */
+}
+    
     h1 {
       font-size: 32px;
       margin: 0;
@@ -276,7 +284,8 @@
 <body>
   
 <h1 class="page-title">WV Weltall Verlag e.K.</h1>
-
+<div class="header-line"></div>
+  
 <header>
   <img src="app_icon.png" alt="App Icon">
   <h1>I Ching (易經) – Das Buch der Wandlungen</h1>
