@@ -1,6 +1,10 @@
 # 📘 I Ching (易經) – Digital Edition  
 **Weltall Verlag e.K.**
 
+**Tags:** I‑Ching, I‑Ging, Yijing, Hexagramme, Orakel, Daoismus, Philosophie, Chinese‑Wisdom, Minimalism, Meditation, Flutter, Android, Windows, Offline‑App, Open‑Source
+
+Digitale Edition des WV Weltall Verlag e.K.
+
 A minimalist Flutter application inspired by  
 *A. V. Krutikov – “I Ching. The Game of Chinese Sages”*.
 
