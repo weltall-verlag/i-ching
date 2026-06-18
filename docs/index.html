@@ -77,13 +77,6 @@
       margin-bottom: 12px;
     }
 
-/* Linie unter dem Verlagstitel */
-.header-line {
-  width: 60%;                /* Kürzt die Linie auf 60 % der Seitenbreite */
-  margin: 0 auto 20px auto;  /* Zentriert sie und fügt unten etwas Abstand hinzu */
-  border-bottom: 1px solid #0a5a4a; /* Farbe passend zum Titel */
-  opacity: 0.8;              /* Etwas weicher, wirkt ruhiger */
-}
     
     h1 {
       font-size: 32px;
@@ -278,20 +271,72 @@
     border-bottom: 1.5px solid #2A9D8F; /* etwas feiner für eleganteren Look */
 }
 
+    /* --- HEADER BLOCK --- */
+
+header {
+  text-align: center;
+  padding: 20px 20px 10px; /* kompakter, kein doppelter Abstand */
+}
+
+/* Verlagsname */
+header .publisher {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #2A7E7D;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Linie unter dem Verlagsnamen */
+.header-line {
+  width: 60%;
+  margin: 8px auto 20px;
+  border-bottom: 1px solid #2A7E7D;
+  opacity: 0.7;
+}
+
+/* App Icon */
+header .app-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 22px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Haupttitel */
+header .main-title {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #2A7E7D;
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+/* Untertitel */
+header .subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
   </style>
 </head>
 
 <body>
   
-<h1 class="page-title">WV Weltall Verlag e.K.</h1>
-<div class="header-line"></div>
-  
 <header>
-  <img src="app_icon.png" alt="App Icon">
-  <h1>I Ching (易經) – Das Buch der Wandlungen</h1>
-   <div class="subtitle">
-   Trilinguale digitale Edition
-  </div>
+  <h1 class="publisher">WV Weltall Verlag e.K.</h1>
+  <div class="header-line"></div>
+
+  <img src="app_icon.png" alt="I Ching App Icon" class="app-icon">
+
+  <h2 class="main-title">I Ching (易經) – Das Buch der Wandlungen</h2>
+  <p class="subtitle">Trilinguale digitale Edition (EN · DE · RU)</p>
 </header>
 
 <section>
