@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.COUNTER_TOKEN }}
 
       - name: Update counter
         run: |
@@ -18,11 +20,9 @@ jobs:
           # Hier kommt später dein echter Code hin
 
       - name: Commit and push changes
-        env:
-          TOKEN: ${{ secrets.COUNTER_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/counter.svg || true
+          git add docs/sitemap.xml || true
           git commit -m "Update counter" || true
-          git push https://x-access-token:${TOKEN}@github.com/weltall-verlag/i-ching.git HEAD:main
+          git push origin HEAD:main
