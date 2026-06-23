@@ -1,6 +1,7 @@
 name: Update Counter
 
 on:
+ workflow_dispatch:
   repository_dispatch:
     types: [update_counter]
 
