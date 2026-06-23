@@ -6,39 +6,26 @@ on:
     types: [update_counter]
 
 jobs:
+jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Read counter
-      id: read
-      run: |
-        count=$(jq '.count' docs/counter.json)
-        echo "count=$count" >> $GITHUB_OUTPUT
+      - name: Update counter
+        run: |
+          echo "Updating counter..."
+          # Hier steht dein eigentlicher Update-Code
+          # Beispiel: python scripts/update_counter.py
 
-    - name: Increase counter
-      id: inc
-      run: |
-        newcount=$(( ${{ steps.read.outputs.count }} + 1 ))
-        echo "{\"count\": $newcount}" > docs/counter.json
-        echo "newcount=$newcount" >> $GITHUB_OUTPUT
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/counter.svg || true
+          git commit -m "Update counter" || true
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.COUNTER_TOKEN }}
 
-    - name: Generate SVG
-      run: |
-        echo "<svg xmlns='http://www.w3.org/2000/svg' width='150' height='30'>
-          <rect width='150' height='30' fill='#0a7f6f'/>
-          <text x='75' y='20' font-size='14' fill='#ffffff' text-anchor='middle'>
-            Besuche: ${{ steps.inc.outputs.newcount }}
-          </text>
-        </svg>" > docs/counter.svg
-
-    - name: Commit changes
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
-        git add docs/counter.json docs/counter.svg
-        git commit -m "Update counter to ${{ steps.inc.outputs.newcount }}" || echo "No changes"
-        git push
