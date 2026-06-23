@@ -24,7 +24,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/counter.svg || true
           git commit -m "Update counter" || true
-          git push
+          git push https://github.com/weltall-verlag/i-ching.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.COUNTER_TOKEN }}
-
