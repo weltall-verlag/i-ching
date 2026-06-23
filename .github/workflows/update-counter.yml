@@ -6,7 +6,6 @@ on:
     types: [update_counter]
 
 jobs:
-jobs:
   update:
     runs-on: ubuntu-latest
     steps:
