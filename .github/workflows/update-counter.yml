@@ -15,28 +15,14 @@ jobs:
       - name: Update counter
         run: |
           echo "Updating counter..."
-          # Hier steht dein eigentlicher Update-Code
+          # Hier kommt später dein echter Code hin
 
       - name: Commit and push changes
         env:
-          COUNTER_TOKEN: ${{ secrets.COUNTER_TOKEN }}
+          TOKEN: ${{ secrets.COUNTER_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Prüfen ob sich etwas geändert hat
-          if ! git diff --quiet docs/counter.svg; then
-            git add docs/counter.svg
-            git commit -m "Update counter"
-            
-            # Remote auf den Token umstellen
-            git remote set-url origin https://x-access-token:${COUNTER_TOKEN}@github.com/weltall-verlag/i-ching.git
-            
-            # Falls Remote weiter ist, rebasen
-            git pull --rebase origin main || echo "Rebase übersprungen"
-            
-            # Pushen
-            git push origin HEAD:main
-          else
-            echo "Keine Änderungen, überspringe."
-          fi
+          git add docs/counter.svg || true
+          git commit -m "Update counter" || true
+          git push https://x-access-token:${TOKEN}@github.com/weltall-verlag/i-ching.git HEAD:main
