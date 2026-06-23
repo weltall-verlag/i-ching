@@ -17,12 +17,21 @@ jobs:
       - name: Update counter
         run: |
           echo "Updating counter..."
-          # Hier kommt später dein echter Code hin
+          FILE="docs/counter.svg"
+          if [ ! -f "$FILE" ]; then
+            echo "Creating new counter.svg..."
+            echo '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60"><rect width="200" height="60" fill="#111"/><text x="100" y="35" font-size="24" fill="#fff" text-anchor="middle">00001</text></svg>' > "$FILE"
+          else
+            CURRENT=$(grep -o '[0-9]\+' "$FILE")
+            NEXT=$(printf "%05d" $((CURRENT + 1)))
+            echo "Updating counter to $NEXT"
+            echo "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"60\"><rect width=\"200\" height=\"60\" fill=\"#111\"/><text x=\"100\" y=\"35\" font-size=\"24\" fill=\"#fff\" text-anchor=\"middle\">$NEXT</text></svg>" > "$FILE"
+          fi
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/sitemap.xml || true
+          git add docs/counter.svg || true
           git commit -m "Update counter" || true
           git push origin HEAD:main
