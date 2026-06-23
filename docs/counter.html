@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<meta http-equiv="refresh" content="0; url=https://api.github.com/repos/weltall-verlag/i-ching/dispatches">
+  <meta charset="UTF-8">
+  <title>Counter Trigger</title>
 </head>
-<body></body>
+<body>
+<script>
+fetch("https://api.github.com/repos/weltall-verlag/i-ching/dispatches", {
+  method: "POST",
+  headers: {
+    "Accept": "application/vnd.github+json",
+    "Authorization": "Bearer ${COUNTER_TOKEN}", // Platzhalter für dein Secret
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    event_type: "update_counter"
+  })
+}).then(() => {
+  // Nach dem Trigger wird die aktuelle SVG angezeigt
+  window.location.href = "counter.svg";
+});
+</script>
+</body>
 </html>
+
